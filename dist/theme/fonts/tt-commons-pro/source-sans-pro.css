@@ -1,0 +1,23 @@
+/**
+ * Foo bar
+ */
+@font-face {
+    font-family: 'TT Commons Pro';
+    src: url('./tt-commons-pro-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Commons Pro';
+    src: url('./tt-commons-pro-medium.ttf') format('truetype');
+    font-weight: medium;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Commons Pro';
+    src: url('./tt-commons-pro-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
