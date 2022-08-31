@@ -1,14 +1,16 @@
 <!doctype html>
-<html>
+<html id="root">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Design Systems & Web Components - a Rabobank case study</title>
 
+		<link rel="stylesheet" href="dist/theme/fonts/tt-commons-pro/source-sans-pro.css">
+		<link rel="stylesheet" href="dist/theme/fonts/Reckless-LightItalic.ttf">
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/io.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -16,8 +18,30 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<section data-markdown="slides/introduction.md"></section>
+				</section>
+				<section>
+					<section data-markdown="slides/agenda.md"></section>
+				</section>
+				<section>
+					<section data-markdown="slides/evolution.md"></section>
+				</section>
+				<section>
+					<section data-markdown="slides/design-system.md"></section>
+				</section>
+				<section>
+					<section data-markdown="slides/rabobank.md"></section>
+				</section>
+				<section>
+					<section data-markdown="slides/abn-amro.md"></section>
+				</section>
+				<section>
+					<section data-markdown="slides/tips-tricks.md"></section>
+				</section>
+				<section>
+					<section data-markdown="slides/closing-up.md"></section>
+				</section>
 			</div>
 		</div>
 
@@ -26,11 +50,20 @@
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
 		<script>
+			// const root = document.getElementById('root');
+			// Reveal.on('slidechanged', ({ indexh }) => {
+			// 	const variant = (indexh % 3) + 1;
+			// 	root.classList.toggle(`slide-1`, variant === 1);
+			// 	root.classList.toggle(`slide-2`, variant === 2);
+			// 	root.classList.toggle(`slide-3`, variant === 3);
+			// });
+
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
+				slideNumber: 'c/t',
 
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
